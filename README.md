@@ -8,9 +8,9 @@ The "JSON POST with Database Integration" API allows for the submission of data 
 
 The "JSON POST with Database Integration" API is a web service that allows users to send data to a server using the JSON (JavaScript Object Notation) format through HTTP POST requests. This data is typically in the form of structured information, such as user input or application data.
 
-The API's primary function is to receive JSON data from users, extract relevant information, and then integrate it into a database system. This integration process involves storing, updating, or retrieving data in a structured manner within a database.
+The API's primary function is to receive JSON data from clients, extract relevant information, and then integrate it into a database system. This integration process involves storing, updating, or retrieving data in a structured manner within a database.
 
-Key features of this API may include validation of incoming JSON data, handling database connections and queries, and responding to users with relevant status codes or data confirmation.
+Key features of this API may include validation of incoming JSON data, handling database connections and queries, and responding to clients with relevant status codes or data confirmation.
 
 This API is commonly used in web and mobile applications to enable data transmission and storage in a structured and efficient manner, making it a fundamental tool for building modern, data-driven software systems.
 
@@ -18,36 +18,36 @@ This API is commonly used in web and mobile applications to enable data transmis
 
 ### postName (add) Endpoint:
 
-Function: The postName (add) endpoint is used to add new data or records to the database. users send a POST request to this endpoint with data in JSON format, and the API stores this new data in the database.
+Function: The postName (add) endpoint is used to add new data or records to the database. Clients send a POST request to this endpoint with data in JSON format, and the API stores this new data in the database.
 
 Required Parameters:
 
-Data Payload: users are required to provide the data to be added in JSON format. This JSON payload contains the information for the new record that needs to be created.
+Data Payload: Clients are required to provide the data to be added in JSON format. This JSON payload contains the information for the new record that needs to be created.
 
 ### postPrint Endpoint:
 
-Function: The postPrint endpoint is used to retrieve and display data from the database. users can send a POST request to this endpoint, specifying the data they want to retrieve using parameters, and the API responds with the requested data in JSON format.
+Function: The postPrint endpoint is used to retrieve and display data from the database. Clients can send a POST request to this endpoint, specifying the data they want to retrieve using parameters, and the API responds with the requested data in JSON format.
 
 Required Parameters:
 
-Query Parameters: users may need to provide specific query parameters to define the criteria for data selection. These parameters could include filters, search terms, or other conditions.
+Query Parameters: Clients may need to provide specific query parameters to define the criteria for data selection. These parameters could include filters, search terms, or other conditions.
 
 ### postUpdate Endpoint:
 
-Function: The postUpdate endpoint is responsible for updating existing records or data entries in the database. users send a POST request with updated data in JSON format to modify specific records.
+Function: The postUpdate endpoint is responsible for updating existing records or data entries in the database. Clients send a POST request with updated data in JSON format to modify specific records.
 
 Required Parameters:
 
-Data ID: users must provide a unique identifier (e.g., data ID) to specify which record should be updated.
-Updated Data: users must include the updated data in JSON format, specifying the changes to be made to the existing record.
+Data ID: Clients must provide a unique identifier (e.g., data ID) to specify which record should be updated.
+Updated Data: Clients must include the updated data in JSON format, specifying the changes to be made to the existing record.
 
 ### postDelete Endpoint:
 
-Function: The postDelete endpoint is used for removing specific records or data entries from the database. users send a POST request with the identifier(s) of the data to be deleted.
+Function: The postDelete endpoint is used for removing specific records or data entries from the database. Clients send a POST request with the identifier(s) of the data to be deleted.
 
 Required Parameters:
 
-Data ID: users must provide a unique identifier (e.g., data ID) to identify which record(s) should be deleted. Depending on your implementation, users may be able to provide multiple IDs for batch deletion.
+Data ID: Clients must provide a unique identifier (e.g., data ID) to identify which record(s) should be deleted. Depending on your implementation, clients may be able to provide multiple IDs for batch deletion.
 
 ## Request Payload
 
@@ -155,7 +155,7 @@ For educational Purposes Only
 
 ## Contributor/s
 
-### Sir Manny Hortizuela
+### Sir Manny Hortezuela
 
 provided:
 
